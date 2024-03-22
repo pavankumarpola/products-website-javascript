@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realme 12+ Pro 5G</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyDIouDHfNQincGAguF2Y2FIQuUIsdUgdjhdPGjYr1ZNDEZrwmjMQ_4PkVVmvUysI-6qQ&usqp=CAU);
+        }
+
+        .product {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-to-cart-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .cart-notification {
+            display: none;
+            background-color: green;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            top: 100;
+            left: 100;
+            z-index: 999;
+        }
+        button:hover{
+            
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="product">
+    <img src="https://rukminim2.flixcart.com/image/832/832/xif0q/mobile/g/t/u/-original-imagxhd5xtjuwnqz.jpeg?q=70&crop=false" alt="" width="19%">
+    <h2>Realme 12 Pro+ 5G</h2>
+    <p>Awesome features and specifications of Realme 12 Pro+ 5G.</p>
+    <p>Price: 31999.99</p>
+    <button class="add-to-cart-btn" onclick="addToCart()">Place order</button>
+</div>
+
+<div class="cart-notification" id="cartNotification">
+    Order Successfully
+</div>
+
+<script>
+    function addToCart() {
+       
+        // showCartNotification();
+        alert("Order Successful")
+        document.location.href="success.html";
+    }
+
+    
+</script>
+
+</body>
+</html>
